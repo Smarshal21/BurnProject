@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Burn Percentage"
+        android:id="@+id/title"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        />
+<!--    <ImageView-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_below="@+id/title"-->
+<!--        android:id="@+id/imageview1"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"/>-->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/imageview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Button"
+        android:layout_below="@+id/imageview2"
+        android:id="@+id/capturebtn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_below="@+id/capturebtn"
+        android:id="@+id/selectbtn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predict  Image"
+        android:layout_below="@+id/selectbtn"
+        android:id="@+id/predictbtn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Result"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/predictbtn"
+        android:layout_marginTop="20dp"
+        android:id="@+id/result"/>
+</RelativeLayout>
